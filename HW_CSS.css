@@ -1,0 +1,99 @@
+background{
+    color:"#E5C9C7"
+}
+
+p{
+    color:rgb(97, 14, 14);
+}
+
+.p1{ 
+    background-image:  url("https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg") ;
+    background-repeat: no-repeat;
+}
+
+.img {
+    opacity: 0.5;
+  }
+  
+.img:hover {
+    opacity: 1.0;
+  }
+
+.imgfloat{
+      float: right;
+  }
+
+  button{
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+background-color: rgb(255, 123, 71);
+  }
+  button:hover{
+      background-color: rgb(224, 71, 44);
+  }
+
+  ::selection{
+      color: wheat;
+      background: rgb(112, 42, 57);
+  }
+
+  h2::before {
+      content: " ♥ ";
+  }
+
+  .tableEg{
+    
+      border-collapse: collapse;
+      width: max(25%,250px);
+  }
+
+  th, td{
+      text-align: left;
+      padding: 10px;
+  }
+  tr:hover{
+      background: rgb(245, 195, 179);
+      color: rgb(128, 3, 3);
+  }
+  tr:nth-child(even){
+      background-color: rgb(231, 231, 231) ;
+  }
+  th{
+      background: rgb(158, 74, 74);
+  }
+
+  .btn{
+      background-color: rgb(187, 202, 187) ;
+      color: rgb(20, 10, 10);
+      padding: 15px;
+      font-size: 15px;
+      border:none;
+      cursor:pointer;
+  }
+  .dropdown{
+      display: inline-block;
+      position: relative;
+  }
+
+  .drop-content{
+      display: none;
+      position: absolute;
+      background-color: lightblue;
+      min-width: 200px;
+      padding: 5px 10px;
+      z-index: 1;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown:hover .drop-content{
+      display: block;
+  }
+  .drop-content a{
+      color: black;
+      padding: 13px;
+      text-decoration: none;
+      display: block;
+  }
+
+
+ 
