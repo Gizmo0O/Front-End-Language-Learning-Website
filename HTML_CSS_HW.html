@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="HW_CSS.css">
+    <meta charset="utf-8">
+    <title>Homework </title>
+    <style type="text/css">
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+pre{
+ font-family:'Times New Roman', Times, serif ;
+}
+.h1{
+    text-align: center;
+    
+    color: brown;
+}
+.h2{
+    text-align: center;
+    color: saddlebrown;
+    border:chocolate ;
+    border-radius: 15px;
+    background-color: cornsilk;
+}
+
+.elements{
+    margin: 10px 0;
+    padding: 20px;
+    border: 10px solid #999;
+}
+
+
+
+        ul.content{
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 175px;
+            background-color: darksalmon;
+            position: fixed;
+            overflow: auto;
+            height: 80%;
+        }
+
+       
+
+        li a {
+            text-align: center;
+            display: block;
+            color:slategray;
+            padding: 10px 25px ;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            color: saddlebrown;
+            background-color: rgb(231, 186, 171);
+        }
+
+        a.mainTopic{
+            background-color: brown;
+            color: black;
+        }
+        
+        li a.mainTopic:hover{
+            background-color:rgb(170, 94, 94);
+            color: black;
+           
+        }
+
+    </style>
+
+</head>
+
+<body bgcolor="#E5C9C7">
+
+    <ul class="content">
+        <li>  <a class="mainTopic" href ="#html"> HTML </a>  </li>
+        <li>  <a href ="#basics"> HTML Basics </a>  </li>
+        <li>  <a href ="#attributes"> HTML Attributes</a>  </li>
+        <li>  <a href ="#textFormat"> HTML Text Formatting </a>  </li>
+        <li>  <a href ="#table"> HTML Tables </a>  </li>
+        <li>  <a class= "mainTopic" href ="#css"> CSS </a>  </li>
+        <li>  <a href ="#formExample"> Form Examples </a>  </li>
+        <li>  <a href ="#backgroundPicture"> Background Picture </a>  </li>
+        <li>  <a href ="#opacity"> Opacity </a>  </li>
+        <li>  <a href ="#imagefloat"> Image Float </a>  </li>
+        <li>  <a href ="#dropdown"> Drop Down Button </a>  </li>
+        <li>  <a href ="#cssTable"> A CSS Table</a>  </li>
+        <li>  <a class="mainTopic" href ="#top"> TOP </a>  </li>
+    </ul>
+
+   
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+     
+        <a id="top"></a>
+        <h1 class="h1" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Learning HTML And CSS</h1>
+        <h2 class="h2" >HTML</h2>
+        <a id="html"></a>
+        <h3>*What is HTML?*</h3>
+
+        <p>
+            <pre>
+             - HTML stands for Hyper Text Markup Language
+             - HTML is the standard markup language for creating Web pages
+             - HTML describes the structure of a Web page
+             - HTML consists of a series of elements
+             - HTML elements tell the browser how to display the content
+             - HTML elements label pieces of content such as 
+               "this is a heading", "this is a paragraph", "this is a link", etc.
+            </pre>
+            
+        </p>
+        <h3>*What is an HTML Element?*</h3>
+
+        <p>
+            <pre>
+               - An HTML element is defined by a start tag (< >), some content, and an end tag (< / >).    
+               - The HTML element is everything from the start tag to the end tag 
+            </pre>  
+        </p>
+
+        <p>
+        
+            The content inside the body section will be displayed in a browser. <br>
+            The content inside the title element will be shown in the browser's title bar or in the page's tab.
+           
+        </p>
+
+        <a id="basics"></a>
+        <h3>HTML BASICS</h3>
+
+
+        <h4>Comment Tag</h4>
+        <p align="center" class="elements">
+            You can add comments to your HTML source by using the following syntax: <br> <br>
+            <  !  --   Write your comments here -- > 
+        </p>
+
+
+        <h4>HTML Headings</h4>
+        <p class="elements">
+            HTML headings are defined with the h1 to h6 tags. <br>
+            h1 defines the most important heading. h6 defines the least important heading: <br>
+                For example:
+                <h1 align="center">This is a h1 heading, </h1>
+                <h2 align="center">This is a h2 heading, </h2>
+                <h3 align="center">This is a h3 heading, </h3>
+                <h4 align="center">This is a h4 heading, </h4>
+                <h5 align="center">This is a h5 heading, </h5>
+                <h6 align="center">This is a h6 heading, </h6>
+        </p>
+
+        <h4>HTML Paragraphs</h4>
+        <p class="elements">
+                HTML paragraphs are defined with the p tag,<br>
+                You cannot be sure how HTML will be displayed.<br>
+                Large or small screens, and resized windows will create different results.<br>
+                With HTML, you cannot change the display by adding <br>
+                extra spaces or extra lines in your HTML code.<br>
+                The browser will automatically remove any extra spaces and lines when the page is displayed:
+        </p>
+
+        <p >
+            <b>This paragraph was created by using only p, so whether 
+            I use "enter" or not won't matter. Here's a poem piece : </b>
+            Once upon a midnight dreary, while I pondered, weak and weary,
+            Over many a quaint and curious volume of forgotten lore—
+                While I nodded, nearly napping, suddenly there came a tapping,
+            As of some one gently rapping, rapping at my chamber door.
+            “’Tis some visitor,” I muttered, “tapping at my chamber door—
+                        Only this and nothing more.”
+        </p>
+
+        <p align="center">
+            <pre>
+ <b>This SAME paragraph was created by using p and pre. Here's a poem piece : </b>
+
+                 Once upon a midnight dreary, while I pondered, weak and weary,
+Over many a quaint and curious volume of forgotten lore—
+                 While I nodded, nearly napping, suddenly there came a tapping,
+As of some one gently rapping, rapping at my chamber door.
+                 “’Tis some visitor,” I muttered, “tapping at my chamber door—
+Only this and nothing more.”
+
+            </pre>
+        </p>
+
+       
+
+
+        <h4>Line Breaks</h4>
+        <p class="elements">
+            The HTML <  br  > element defines a line break. <br>
+            Use < br > if you want a line break (a new line) without starting a new paragraph.
+        </p>
+
+        <p align="center">
+            This paragraph <br> uses line <br> breaks to <br> demonstrate.
+        </p>
+
+
+    
+
+
+
+        <h4>Horizontal Rules</h4>
+        <p class="elements">
+            The < hr > tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+            The < hr > element is used to separate content (or define a change) in an HTML page
+        </p>
+
+        <p align="center">There is a horizontal rule below this paragraph.</p>
+        <hr>         
+        <p align="center">This is a horizontal rule above this paragraph.</p>
+
+
+
+        <br>
+        <a id="attributes"></a>
+        <h3>*Some HTML Elements and Attributes*</h3>
+        <br>
+
+
+        <h4>HTML Links</h4>
+        <p class="elements">
+            HTML links are defined with the < a > tag
+            <br>We use <b>href</b> here to go to the referenced site. 
+        </p>
+        <br>
+        <button class="center" ><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" >Button with a link</a></button>
+        <p align="right" style="font-size:20px" style="color:crimson">It works :)</p>
+
+
+        <h4>HTML Images</h4>
+        <p class="elements">
+            HTML images are defined with the < img > tag. <br>
+            The source file (src), alternative text (alt), width, and height are provided as attributes.
+            <br>We use <b>src</b> here to source. 
+        </p>
+
+        <br>
+        <img class="center" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"  width="1000px" >  
+        <br>
+
+        <p>
+            There are two ways to specify the URL in the src attribute: 
+            <br>1. Absolute (which we've done above)
+            <br>2. Relative
+        </p>
+
+        <h4>The Lang Attribute</h4>
+        <p class="elements">
+            You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. 
+            <br>This is meant to assist search engines and browsers.  For example: 
+           
+            <pre align="center">
+                < !DOCTYPE html >
+                < html lang ="en" >
+            </pre>
+        </p>
+
+        <br>
+
+        <h4>The style Attribute  </h4>
+        <p class="elements">
+            The style attribute is used to add styles to an element, such as color, font, size, and more. (CSS)   
+        </p>
+
+        <ul>
+            <li>background-color</li> 
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>text-align</li>
+
+        </ul>
+
+        <br>
+
+        <h4>The title Attribute  </h4>
+        <p class="elements">
+            The title attribute defines some extra information about an element.<br>
+            The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+        </p>
+
+        <p> <abbr title="Did you see that?">This is an example.</abbr></p> 
+
+        <br>
+
+        <hr>  
+
+        <a id="textFormat"></a>
+        <h3>*HTML Text Formatting*</h3>
+        <br>
+        <p>
+            <pre>
+                When you're writing <b>bold text</b> you can use : < b>< /b>
+                When you're writing <strong>important text</strong> you can use : < strong>< /strong>
+                When you're writing <i>italic text</i> you can use : < i>< /i>
+                When you're writing <em>emphasized text</em> you can use : < em>< /em>
+                When you're writing <mark>marked text</mark> you can use : < mark>< /mark> 
+                When you're writing <small>smaller text</small> you can use : < small>< /small>
+                When you're writing <del>delted text</del> you can use : < del>< /del>
+                When you're writing <ins>inserted text</ins> you can use : < ins>< /ins>
+                When you're writing <sub>subscript text</sub> you can use : < sub>< /sub>
+                When you're writing <sup>supscript text</sup> you can use : < sup>< /sup>
+            </pre>
+            
+            <pre align="right">
+                For example :          x<sup>2</sup>+y<sup>2</sup>=z<sup>2</sup>    or    log<sub>10</sub>5
+            </pre>
+        </p>
+
+        <hr>  
+
+        <br>
+        <a id="table"></a>
+        <h3>*HTML Tables*</h3>
+
+        <p>
+            <pre>
+                - Table Cells:
+                        Each table cell is defined by a < td> and a < /td> tag.
+
+                - Table Rows:
+                        Each table row starts with a < tr> and end with a < /tr> tag.
+
+                - Table Headers:
+                        Sometimes you want your cells to be headers, in those cases use the < th> tag instead of the < td> tag.
+            </pre>
+        </p>
+
+        <p align="center"> A normal table</p>
+    <table border="2" cellpadding="15px" cellspacing ="10px" align="center">
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+            <td>cell 3</td>
+            <td>cell 4</td>
+        </tr>
+        <tr>
+            <td>cell 5</td>
+            <td>cell 6</td>
+            <td>cell 7</td>
+            <td>cell 8</td>
+        </tr>
+        <tr>
+            <td>cell 9</td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+            <td>cell 12</td>
+        </tr>
+    </table>
+
+    <p align="center"> A <em><ins>not</ins></em> so normal table</p>
+
+    <table border="2" cellpadding="15px" cellspacing ="10px" align="center" >
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+            <td>cell 3</td>
+            <td rowspan="3">cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="3">cell 5</td>
+            
+        </tr>
+        <tr>
+            <td>cell 6 </td>
+            <td rowspan="2">cell 7</td>
+            <td>cell 8</td>
+            
+            
+        </tr>
+        <tr>
+            <td>cell 9 </td>
+            <td>cell 10</td>
+            <td>cell 11</td>
+            
+            
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <a id="css"></a>
+        <h2 class="h2" >CSS</h2>
+        <h3>*What is CSS?*</h3>
+
+        <p>
+            <pre>
+             - CSS is the language we use to style a Web page.
+             - CSS stands for Cascading Style Sheets.
+             - CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+             - CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+             - External stylesheets are stored in CSS files.
+            </pre>
+            
+        </p>
+
+        <hr> 
+
+        <a id="formExample"></a>
+
+        <h4>A Form Example : </h4>
+
+        <form method="get" action="next.html">
+           <label for="username">Name and surname: <input type="text" name ="username" 
+            id="username" placeholder="Please enter..."> <br>
+            <label for="username">Password : <input type="password" name="spassword" value="EnterPass"> <br>
+            <input type="submit" name="sbutton" value="Enter">
+               
+         </form>
+
+         <h4>With this example we can see that we can only select one : </h4>
+
+             <input type="radio" name="gender"> Male <br>
+             <input type="radio" name="gender"> Female <br>
+             <input type="radio" name="gender"> Non Binary <br>
+
+         <h4>With this example HOWEVER we can see that we can only select multiple : </h4>
+
+             <input type="radio" name="gender1"> Male <br>
+             <input type="radio" name="gender2"> Female <br>
+             <input type="radio" name="gender3"> Non Binary <br>
+             
+       
+         <h4>A selection from a list : </h4>
+
+         <select name="Stars">
+             <option>1 star</option>
+             <option>2 stars</option>
+             <option>3 stars</option>
+             <option>4 stars</option>
+             <option>5 stars</option>
+             <option selected>default</option>
+             </select>
+
+         <select name="Stars" size=4>
+                <option>1 star</option>
+                <option>2 stars</option>
+                <option>3 stars</option>
+                <option>4 stars</option>
+                <option>5 stars</option>
+                <option selected>default</option>
+                </select>
+
+         <select name="Stars" size=6 multiple>
+                    <option>1 star</option>
+                    <option>2 stars</option>
+                    <option>3 stars</option>
+                    <option>4 stars</option>
+                    <option>5 stars</option>
+                    <option selected>default</option>
+                    </select>
+
+
+                    <hr> 
+                    <br>
+                    <a id="backgroundPicture"></a>
+                    <h3>Making a picture background no repeat :</h3>
+    <p  class="p1"> 
+
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+EXAMPLE <br>
+    </p>
+    <br>
+    <hr> 
+    <a id="opacity"></a>
+    <h3>Making pictures opaque via opacity:</h3>
+
+    <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Nature-forest-trees-fog.jpg" alt="Forest" width="170" height="100">
+    <img class="img" src="https://ychef.files.bbci.co.uk/976x549/p0973lkk.jpg" alt="Mountains" width="170" height="100">
+    <img class="img" src="https://images.theconversation.com/files/295442/original/file-20191003-52796-1763ajl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop" alt="Ocean" width="170" height="100">
+
+    <br>
+    <br>
+    <hr> 
+    <a id="imagefloat"></a>
+    <h3>Image float next to the paragraph: </h3>
+    <img class="imgfloat" src="https://www.securitysales.com/wp-content/uploads/2020/12/AdobeStock_287118717-1000x500.jpeg" width="250px">
+    <p><a href="http://ethw.org/Category:Computing_and_electronics?gclid=Cj0KCQiA7oyNBhDiARIsADtGRZaepnmKNLHWRv9Cp1S-_V6nF3qES4X8hsJLGexUaC6njYekwdjbOSEaAjMrEALw_wcB">
+    Although computers are typically viewed as a modern invention involving electronics, 
+    computing predates the use of electrical devices. 
+    The ancient abacus was perhaps the first digital computing device. 
+    Analog computing dates back several millennia as primitive computing devices were used as 
+    early as the ancient Greeks and Romans, the most known complex of which being the Antikythera mechanism. 
+    </a></p>
+    <hr> 
+
+
+    <a id="dropdown"></a>
+    <h4>Drop Down</h4>
+
+    <div class="dropdown" >
+        <button class ="btn"> Here is a dropdown button </button>
+        <div class="drop-content">
+
+        <a class="mainTopic" href ="#html"> HTML </a> 
+        <a href ="#basics"> HTML Basics </a> 
+        <a href ="#attributes"> HTML Attributes</a>  
+        <a href ="#textFormat"> HTML Text Formatting </a> 
+        <a href ="#table"> HTML Tables </a> 
+        <a class= "mainTopic" href ="#css"> CSS </a> 
+        <a href ="#formExample"> Form Examples </a> 
+        <a href ="#backgroundPicture"> Background Picture </a>  
+        <a href ="#opacity"> Opacity </a> 
+        <a href ="#imagefloat"> Image Float </a>  
+        <a href ="#dropdown"> Drop Down Button </a> 
+        <a href ="#cssTable"> A CSS Table</a>  
+        <a class="mainTopic" href ="#top"> TOP </a>
+          
+        
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <br>
+    <a id="cssTable"></a>
+    <h4>A CSS TABLE: </h4>
+
+    <table class="tableEg" align="center">
+        <tr><th> ID </th> <th> TYPE </th> <th> AGE </th> </tr>
+        <tr><td> 001 </td> <td> A Person </td> <td> 22 </td> </tr>
+        <tr><td> 002 </td> <td> A Bear </td> <td> 15 </td> </tr>
+        <tr><td> 003 </td> <td> A Penguin </td> <td> 2 </td> </tr>
+        <tr><td> 004 </td> <td> A Mouse </td> <td> 1 </td> </tr>
+    </table>
+
+
+      </div>
+
+</body>
+
+</html>
